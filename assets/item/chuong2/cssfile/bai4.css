@@ -1,0 +1,20 @@
+.table-exam{
+    border: 2px solid #000;
+}
+
+tr,th{
+    border: 1px solid #fff;
+}
+
+tr:first-child{
+    background-color: rgb(129, 127, 127);
+}
+
+tr:nth-child(3),
+tr:nth-child(5){
+    background-color: rgb(180, 175, 175);
+}
+
+tr:nth-child(even){
+    background-color: aliceblue;
+}

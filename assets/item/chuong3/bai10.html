@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #bgr-header{
+        height: 200px;
+        width: 400px;
+        background-color: #ff0000;
+        color: #ffff00;
+        text-align: center;
+    }
+    #text-input, #bgcolor, #textcolor{
+        margin: 10px;
+    }
+    button{
+        margin: 10px;
+    }
+</style>
+<body>
+    <div id="bgr-header">
+        <h1 id="text-header"></h1>
+    </div>
+
+    <div class="form-input">
+        <label for="">Nhập nội dung: </label>
+        <input id="text-input" type="text" value="WELCOME HTML5!">
+        <br><label for="">Màu nền: </label>
+        <input type="color" id="bgcolor" value="#ff0000">
+        <br><label for="">Màu chữ: </label>
+        <input type="color" id="textcolor" value="#ffff00">
+        <br><button onclick="changeColor()">Thực hiện</button>
+    </div>
+    <script src="./js/bai10.js"></script>
+</body>
+</html>

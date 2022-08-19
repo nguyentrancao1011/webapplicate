@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header img{
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.header h1{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 150px;
+    color: cornsilk;
+    text-shadow: rgb(172, 164, 164) 10px 10px 3px;
+}
+
+.banner{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(162, 225, 225);
+    display: flex;
+    justify-content: center;
+}
+
+.banner a{
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 45px;
+    padding: 0 25px;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+}
+
+.banner > .banner-menu:hover > a,
+.banner .sub-menu li:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.banner .sub-menu{
+    display: none;
+    background-color: rgb(162, 225, 225);
+    position: absolute;
+}
+.banner .banner-menu:hover .sub-menu{
+    display: block;
+}
+.banner .sub-menu li{
+    padding: 10px 26px;
+    list-style-type: none;
+    font-weight: 500;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-top: solid 2px rgb(27, 63, 78);
+}
+.content{
+    background-color: rgb(149, 191, 191);
+    height: 600px;
+    display: flex;
+}
+
+.content .left-content{
+    width: 15%;
+}
+
+.content .header-content p{
+    padding: 5px 20px;
+    background-color: dimgray;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+.header-content li{
+    list-style-type: none;
+}
+
+.content .list-option{
+    padding: 20px;
+}
+
+
+.center-content{
+    width: 70%;
+    background-color: #fff;
+}
+
+.about-center textarea{
+    width: 100%;
+    height: 598px;
+}
+
+.content .right-content div{
+    width: 180px;
+    height: 150px;
+    margin: 20px 14px;
+    border-radius: 20px;
+    background-color: bisque;
+    box-shadow: 5px 5px #000;
+    text-align: center;
+    line-height: 150px;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(58, 89, 118);
+    text-align: center;
+    line-height: 50px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tính số ngày giữa hai thời điểm</h1>
+    <div class="toDate">
+        <label for="">Từ ngày: </label>
+        <input id="todate" type="date">
+    </div>
+    <div class="fromDate">
+        <label for="">Đến ngày: </label>
+        <input id="fromdate" type="date">
+    </div>
+    <button>Tính số ngày</button>
+    <p id="text-result"></p>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var date1 = $("#todate").val();
+            var date2 = $("#fromdate").val();
+            d1 = new Date(date1);
+            d2 = new Date(date2);
+            var calDay = (d2.getTime() - d1.getTime())/(3600*24*1000);
+            $("#text-result").text("Số ngày là: "+calDay);
+        })
+    })
+</script>
+</html>

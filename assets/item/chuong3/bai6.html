@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, tr, th{
+        border: 2px solid #000;
+        width: 100%;
+    }
+    table tr > th:nth-child(2){
+        text-align: left;
+    }
+    .big{
+        background-color: bisque;
+        text-align: center;
+        width: 500px;
+        height: 500px;
+    }
+    .table-around{
+        width: 100%;
+    }
+    .about{
+        width: 99%;
+        height: 200px;
+        background-color: cornsilk;
+        border: 2px solid #000;
+        margin-top: 5px;
+        text-align: left;
+    }
+</style>
+<body>
+    <div class="big">
+        <div class="text-header" ><h1 style="font-size: 30px;">ĐĂNG KÝ THÀNH VIÊN</h1></div>
+        <div class="table-around">
+            <table>
+                <tr>
+                    <th>Tên đăng nhập</th>
+                    <th>
+                        <input id="username" type="text" placeholder="Nhập vào tên đăng nhập">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Mật khẩu</th>
+                    <th>
+                        <input id="password" type="password" placeholder="Nhập vào mật khẩu">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Ngày sinh</th>
+                    <th>
+                        <input id="birthday" type="date" value="2000-01-01">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Giới tính</th>
+                    <th>
+                        <input id="male" name="gender" type="radio" >Nam
+                        <input id="female" name="gender" type="radio">Nữ
+                    </th>
+                </tr>
+                <tr>
+                    <th>Vấn đề bạn quan tâm</th>
+                    <th>
+                        <select name="" id="form-control">
+                            <option value="economic">Kinh tế</option>
+                            <option value="literature">Văn học nghệ thuật</option>
+                            <option value="sport">Thể thao</option>
+                            <option value="tech">Công nghệ</option>
+                            <option value="enviro">Môi trường</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <button onclick="get_result()">Đăng ký</button>
+                    </th>
+                    <th>
+                        <button onclick="">Hủy</button>
+                    </th>
+                </tr>
+            </table>
+            <div class="about">
+                <h3 id="text-result"></h3>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bai6.js"></script>
+</body>
+</html>

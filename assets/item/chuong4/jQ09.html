@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container .form-input,
+    .container .text-result{
+        width: 45%;
+        background-color: antiquewhite;
+    }
+    fieldset{
+        border: 2px solid #000;
+        width: 96%;
+    }
+    #text-color{
+        margin: 20px 0px;
+    }
+    ol li:nth-child(odd){
+        background-color: aqua;
+        padding: 4px 3px;
+    }
+    ol li:nth-child(even){
+        background-color:indianred;
+        padding: 4px 3px;
+    }
+    ol li:hover{
+        cursor: pointer;
+    }
+    #result{
+        text-align: center;
+        position: relative;
+        top: 109px;
+    }
+    .showShadow{
+        text-shadow: 5px 5px 6px #000;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="form-input">
+            <fieldset>
+                <legend>OPTION</legend>
+                <input id="hide" type="radio" name="checkColor" checked >Chữ bình thường<br>
+                <input id="show" type="radio" name="checkColor" >Chữ có bóng<br>
+                <label for="">Chọn màu chữ: </label>
+                <input id="text-color" type="color"><br>
+                <button id="deleteElement">Xóa phần tử cuối</button>
+                <button id="restore">Phục hồi</button>
+            </fieldset>
+            <fieldset>
+                <legend>Click vào một chuỗi</legend>
+                <ol start="1">
+                    <li>JAVA</li>
+                    <li>PYTHON</li>
+                    <li>JAVASCRIPT</li>
+                </ol>
+            </fieldset>
+        </div>
+        <div class="text-result">
+            <h1 id="result">HTML</h1>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var arr = [];
+        $("#hide").click(function(){
+            $("#result").removeClass("showShadow");
+        })
+        $("#show").click(function(){
+            $("#result").addClass("showShadow");
+        })
+        // doi mau chu
+        $("#text-color").change(function(){
+            $("#result").css("color", $(this).val());
+        })
+        //doi chu
+        $("ol li").click(function(){
+            $("#result").text($(this).text());
+        })
+        //xoa phan tu
+        $("#deleteElement").click(function(){
+            var tmp = $("ol li:last").text();
+            if(tmp == '') return;
+            arr.push(tmp);
+            $("ol li:last").remove();
+        })
+        //phuc hoi phan tu da xoa
+
+        $("#restore").click(function(){
+            if(arr.length == 0) return;
+            var tmp2 = "<li>"+arr.pop()+"</li>"
+            $("ol").append(tmp2);
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bai3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="big">
+        <h1>Chương trình giải phương trình bậc 2</h1>
+        <h3>ax<sup>2</sup>+bx+c=0</h3>
+        <table>
+            <tr>
+                <th>a = </th>
+                <th>
+                    <input class="value" id="valueA" type="text" placeholder="Nhập vào a">
+                </th>
+            </tr>
+            <tr>
+                <th>b = </th>
+                <th>
+                    <input class="value" id="valueB" type="text" placeholder="Nhập vào b">
+                </th>
+            </tr>
+            <tr>
+                <th>c = </th>
+                <th>
+                    <input class="value" id="valueC" type="text" placeholder="Nhập vào c">
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>
+                    <button onclick="get_value()">Giải</button>
+                    <button onclick="clean()">Xóa</button>
+                </th>
+            </tr>
+        </table>
+        <div class="text-down">
+            <h3 id="text-results"></h3>
+        </div>
+
+    </div>
+    <script src="./js/bai3.js"></script>
+</body>
+
+</html>

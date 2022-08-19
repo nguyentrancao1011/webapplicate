@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        background-color: wheat;
+        width: 50%;
+        height: 500px;
+        text-align: center;
+    }
+    table, tr, th{
+        border: 1px solid #000;
+        background-color: aliceblue;
+    }
+    table{
+        width: 50%;
+        text-align: left;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="text-header">
+            <h1>CÁC PHÉP TÍNH SỐ HỌC</h1>
+            <table>
+                <tr>
+                    <th>Số thứ 1</th>
+                    <th>
+                        <input id="inputA" type="text" placeholder="Nhập vào số thứ nhất">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Số thứ 2</th>
+                    <th>
+                        <input id="inputB" type="text" placeholder="Nhập vào số thứ hai">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Chọn phép toán</th>
+                    <th>
+                        <input id="add" name="check" type="radio" value="add"/>Cộng<br>
+                        <input id="subtract" name="check" type="radio" value="subtract"/>Trừ<br>
+                        <input id="multiply" name="check" type="radio" value="multiply"/>Nhân<br>
+                        <input id="divide" name="check" type="radio" value="divide"/>Chia<br>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <button onclick="operator()">Thực hiện</button>
+                    </th>
+                    <th>
+                        <input type="text" id="text-result" readonly    >
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./js/bai4.js"></script>
+</body>
+
+</html>

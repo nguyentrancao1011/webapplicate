@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.big{
+    width: 50%;
+    height: 400px;
+    background-color: antiquewhite;
+}
+
+table, tr, th{
+    border: 1px solid #000;
+    background-color: rgb(220, 248, 7);
+    width: 60%;
+    text-align: left;
+}
+table{
+    margin-top: 30px;
+}
+button{
+    padding: 5px 10px;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+.text-down{
+    margin-top: 40px;
+}

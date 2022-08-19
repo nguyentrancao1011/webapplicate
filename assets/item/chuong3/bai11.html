@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .small{
+        height: 77px;
+        width: 102px;
+    }
+    .medium{
+        height: 192px;
+        width: 256px;
+    }
+    .large{
+        height: 384px;
+        width: 512px;
+    }
+</style>
+<body>
+    <h1>Image Resizing</h1>
+    <label for="">Scale: </label>
+    <input type="radio" name="checksize" value="small" onclick="changeSize(this.value)">10%
+    <input type="radio" name="checksize" value="medium" onclick="changeSize(this.value)">25%
+    <input type="radio" name="checksize" value="lagre" checked onclick="changeSize(this.value)">50%
+
+    <br><img id="image" class="large" src="../../img/pointlobos.jpg">
+</body>
+<script>
+    function changeSize(value){
+        document.getElementById("image").className = value;
+    }
+</script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .big{
+        width: 700px;
+        height:300px;
+        background-color: rgb(175, 158, 133);
+        text-align: center;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #string1, #string2, #string3{
+        width: 70%;
+    }
+    .about > div{
+        margin-top: 5px;
+    }
+    button{
+        margin: 5px;
+        padding: 10px;
+    }
+    .text{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(183, 218, 219);
+    }
+</style>
+<body>
+    <div class="big">
+        <h1>CHƯƠNG TRÌNH XỬ LÝ CHUỖI</h1>
+        <div class="about">
+            <div>
+                <label for="">Chuỗi S1: </label>
+                <input id="string1" type="text" placeholder="Nhập vào chuỗi 1" value="">
+            </div>
+            <div>
+                <label for="">Chuỗi S2: </label>
+                <input id="string2" type="text" placeholder="Nhập vào chuỗi 2" value="">
+            </div>
+            <div>
+                <label for="">Chuỗi S3: </label>
+                <input id="string3" type="text" placeholder="Nhập vào chuỗi 3" value="">
+            </div>
+            <div>
+                <label for="">Vị trí chèn: </label>
+                <input id="insert-index" type="text" placeholder="Nhập ví trí chèn">
+            </div>
+        </div>
+        <div class="list-btn">
+            <button onclick="chuanHoa()">Chuẩn hóa chuỗi</button>
+            <button onclick="daoChuoi()">Đảo chuỗi</button>
+            <button onclick="restore()">Khôi phục</button><br>
+            <button onclick="replaceString()">Thay thế S2 bằng S3</button>
+            <button onclick="insertString()">Chèn S2 vào S1</button>
+            <button onclick="dltString()">Xóa S2 trong S1</button>
+        </div>
+
+        <div class="text">
+            <div>
+                <h2>Kết quả</h2>
+            </div>
+            <div>
+                <h1 id="text-result"></h1>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bai7.js"></script>
+</body>
+</html>

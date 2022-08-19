@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .big-about{
+        width: 500px;
+        height: 600px;
+        background-color: wheat;
+        text-align: center;
+    }
+
+    #form-input{
+        width: 60%;
+    }
+    .text-header{
+        margin-bottom: 30px;
+        background-color: grey;
+        padding: 10px 0;
+    }
+    .big-about > button{
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #fff;
+        color: #000;
+    }
+    .big-about > button:hover{
+        background-color: burlywood;
+        color: #fff;
+    }
+    .about-result{
+        background-color: beige;
+        height: 350px;
+        margin-top: 30px;
+    }
+</style>
+<body>
+    <div class="big-about">
+        <div class="text-header">
+            <h1>STRING STATISTIC</h1>
+        </div>
+        <div class="text-input">
+            <label for="">String: </label>
+            <input id="form-input" type="text" value="     tran  cao nguyen   ">
+        </div>
+        <button onclick="statistic()">Statistic</button>
+
+        <div class="about-result">
+            <h2>Result</h2>
+            <p id="text-result"></p>
+        </div>
+    </div>
+    <script src="./js/bai8.js"></script>
+</body>
+</html>

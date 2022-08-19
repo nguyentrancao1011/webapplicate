@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bai1.css">
+    <title>Js</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .big{ 
+        border: 2px solid #000;
+        width: 400px;
+    }
+    .table-cal tr th{
+        border: 2px solid #000;
+        width: 200px;
+        height: 25px;
+    }
+
+    #submit-btn{
+        margin: 30px;
+        width: 60px;
+        height: 30px;
+    }
+</style>
+<body>
+    <div>
+        <h1>Chuong trinh tinh tuoi</h1>
+        <div class="big">
+            <table class="table-cal">
+                <tr >
+                    <th>Nhap vao ten ban:</th>
+                    <th>
+                        <input id="name" type="text" placeholder="Nhap vao ten">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Nhap vao nam sinh:</th>
+                    <th>
+                        <input id="age" type="text" placeholder="Nhap vao nam sinh">
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <button id="submit-btn" onclick="calculate()">
+        tinh tuoi
+    </button>
+    <p id="text-name"></p>
+    <p id="text-age"></p>
+    <script src="./js/bai1.js"></script>
+</body>
+</html>

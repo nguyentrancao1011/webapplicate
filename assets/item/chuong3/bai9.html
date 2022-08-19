@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .big-about{
+        width: 500px;
+        height: 300px;
+        background-color: rgb(255, 238, 164);
+        text-align: center;
+    }
+    .form-input{
+        padding: 10px ;
+    }
+    div > button{
+        background-color: tomato;
+        border: none;
+        padding: 5px 10px;
+    }
+    div > button:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    table, tr, th{
+        margin: 20px;
+        padding-top: 20px;
+    }
+</style>
+<body>
+    <div class="big-about">
+        <div class="form-input">
+            <label for="">Nhập số phần tử: </label>
+            <input id="element-input" type="text">
+        </div>
+        <div>
+            <button onclick="createArray()">Tạo mảng</button>
+            <button onclick="sortAscen()">Sắp xếp mảng tăng</button>
+            <button onclick="sortDecrease()">Sắp xếp mảng giảm</button>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Mảng ban đầu: </th>
+                    <th id="default-array"></th>
+                </tr>
+                <tr>
+                    <th>Mảng tăng dần: </th>
+                    <th id="ascending-array"></th>
+                </tr>
+                <tr>
+                    <th>Mảng giảm dần: </th>
+                    <th id="decrease-array"></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./js/bai9.js"></script>
+</body>
+</html>
